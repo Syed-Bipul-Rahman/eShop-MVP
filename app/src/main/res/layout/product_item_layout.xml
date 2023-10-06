@@ -28,7 +28,7 @@
                 android:layout_marginTop="10dp"
                 android:layout_marginRight="10dp"
                 android:layout_marginBottom="10dp"
-                android:src="@drawable/ic_launcher_background" />
+                android:src="@drawable/tomato" />
 
             <TextView
                 android:id="@+id/productname"
@@ -49,7 +49,7 @@
                 android:layout_marginLeft="10dp"
                 android:text="Price: 160 BDT/KG"
                 android:textAlignment="textStart"
-                android:textColor="@color/black"
+                android:textColor="@color/redv_2"
                 android:textSize="19sp"
                 android:textStyle="bold" />
 
@@ -78,7 +78,7 @@
                 <ImageView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:src="@drawable/ic_launcher_background" />
+                    android:src="@drawable/ic_baseline_star_24" />
 
                 <TextView
                     android:id="@+id/productrating"
