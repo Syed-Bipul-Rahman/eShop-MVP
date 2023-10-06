@@ -39,7 +39,7 @@
         android:id="@+id/progressbar_container"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:visibility="visible">
+        android:visibility="gone">
 
         <ProgressBar
             android:id="@+id/progressbar_home"
@@ -543,7 +543,8 @@
         android:layout_height="wrap_content"
         android:layout_margin="10dp"
         android:layout_marginTop="3dp"
-        android:visibility="gone" />
+        android:visibility="visible"
+        tools:listitem="@layout/product_item_layout"/>
 
 
 </LinearLayout>
