@@ -32,6 +32,7 @@ public class ProductDetails extends AppCompatActivity {
 
     ImageSlider imageSlider;
     double productPrice;
+    double totalProductPrice;
     int defaultquantity = 1;
 
     @Override
@@ -87,19 +88,20 @@ public class ProductDetails extends AppCompatActivity {
             defaultquantity += 1;
             binding.quantityTextview.setText(defaultquantity + "");
 
-            productPrice *= defaultquantity;
-            binding.totaltopayprice.setText("$" + productPrice);
+             totalProductPrice = productPrice * defaultquantity;
+            binding.totaltopayprice.setText("$" + totalProductPrice);
 
         });
         //for decrease
         binding.decreaseQuantitybtn.setOnClickListener(v -> {
             if (defaultquantity > 1) {
-                productPrice /= defaultquantity;
                 defaultquantity -= 1;
                 binding.quantityTextview.setText(defaultquantity + "");
-                binding.totaltopayprice.setText("$" + productPrice);
-            }
 
+                // Calculate the total price based on the updated defaultquantity
+                totalProductPrice = productPrice * defaultquantity;
+                binding.totaltopayprice.setText("$" + totalProductPrice);
+            }
         });
 
 
